@@ -1,1 +1,6 @@
 /.idea
+.idea/codeception.xml
+.idea/dataSources.xml
+.idea/microservices.iml
+.idea/php.xml
+.idea/phpspec.xml
