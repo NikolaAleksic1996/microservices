@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { SyntheticEvent, useState } from 'react';
 import { Button, Container, TextField, Typography } from '@mui/material';
+import { Navigate } from 'react-router-dom';
+import axios from 'axios';
 
 const formStyles = {
   width: '100%',
@@ -13,15 +15,22 @@ const submitStyles = {
 const LoginPage: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [redirect, setRedirect] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: SyntheticEvent) => {
     e.preventDefault();
-    // Handle login logic here
-    console.log('Parameters', 'Email:', email, 'Password:', password);
-    // Reset form fields
-    setEmail('');
-    setPassword('');
+
+    await axios.post('login', {
+      email,
+      password,
+    });
+
+    setRedirect(true);
   };
+
+  if (redirect) {
+    return <Navigate to="/" />;
+  }
 
   return (
     <Container component="main" maxWidth="xs">

@@ -8,6 +8,8 @@
       <sourceFolder url="file://$MODULE_DIR$/laravel-ambasador/tests" isTestSource="true" packagePrefix="Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/laravel-ambasador/tests/Feature" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/laravel-ambasador/tests/Unit" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/laravel-ambasador/vendor/brick/math" />
       <excludeFolder url="file://$MODULE_DIR$/laravel-ambasador/vendor/carbonphp/carbon-doctrine-types" />
       <excludeFolder url="file://$MODULE_DIR$/laravel-ambasador/vendor/composer" />
@@ -120,6 +122,12 @@
       <excludeFolder url="file://$MODULE_DIR$/laravel-ambasador/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/laravel-ambasador/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/laravel-ambasador/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel-ambasador/vendor/barryvdh/laravel-ide-helper" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel-ambasador/vendor/barryvdh/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel-ambasador/vendor/doctrine/deprecations" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel-ambasador/vendor/phpdocumentor/reflection-common" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel-ambasador/vendor/phpdocumentor/type-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel-ambasador/vendor/phpstan/phpdoc-parser" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
