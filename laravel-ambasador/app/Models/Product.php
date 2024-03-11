@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Barryvdh\LaravelIdeHelper\Eloquent;
+use Database\Factories\ProductFactory;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -17,7 +18,7 @@ use Illuminate\Support\Carbon;
  * @property int $likes
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * @method static \Database\Factories\ProductFactory factory($count = null, $state = [])
+ * @method static ProductFactory factory($count = null, $state = [])
  * @method static Builder|Product newModelQuery()
  * @method static Builder|Product newQuery()
  * @method static Builder|Product query()
@@ -32,4 +33,9 @@ use Illuminate\Support\Carbon;
 class Product extends Model
 {
     use HasFactory;
+
+    /**
+     * @var string[]
+     */
+    protected $guarded = ['id'];
 }

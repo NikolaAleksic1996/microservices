@@ -1,2 +1,34 @@
+### Get all products
 GET http://localhost:8000/api/products
-#Accept: application/json
+Accept: application/json
+Content-Type: application/json
+
+### Get priduct by id
+GET http://localhost:8000/api/products/21
+Accept: application/json
+Content-Type: application/json
+
+### Create product
+POST http://localhost:8000/api/products
+Accept: application/json
+Content-Type: application/json
+
+{
+    "title": "Product 1",
+    "image": "Image 1"
+}
+
+### Update product
+PUT http://localhost:8000/api/products/21
+Accept: application/json
+Content-Type: application/json
+
+{
+    "title": "Product 11",
+    "image": "Image 11"
+}
+
+### Delete product
+DELETE http://localhost:8000/api/products/21
+Accept: application/json
+Content-Type: application/json
