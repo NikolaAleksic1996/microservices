@@ -15,7 +15,7 @@ Adjustments can be made based on your specific Kafka setup and requirements.
 1. **Start Docker containers**:
    ```bash
    docker-compose up -d  OR
-   docker compose -f docker-compose.yaml -d
+   docker compose -f docker-compose.yaml up -d
 
 2. **Move into Kafka container**:
    ```bash
