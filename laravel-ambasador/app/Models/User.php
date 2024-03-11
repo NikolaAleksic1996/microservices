@@ -43,5 +43,8 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory;
 
-//    public $timestamps = false;
+    /**
+     * @var string[]
+     */
+    protected $guarded = ['id'];
 }
