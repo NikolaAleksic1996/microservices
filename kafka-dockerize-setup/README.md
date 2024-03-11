@@ -37,4 +37,11 @@ Adjustments can be made based on your specific Kafka setup and requirements.
    ```bash
    kafka-console-consumer.sh --topic quickstart --from-beginning --bootstrap-server localhost:9092
    
-- Also, you can download **Offset Explorer** this is _kafka tool_ from the next link: https://www.kafkatool.com/download.html
+- Also, you can download **Offset Explorer** this is _kafka tool_ for manage messages between Procedure and Consumer,
+from the next link: https://www.kafkatool.com/download.html
+
+## References
+
+- [Apache Kafka Documentation](https://kafka.apache.org/documentation/)
+- [Docker Documentation](https://docs.docker.com/)
+- [Confluent Documentation](https://docs.confluent.io/platform/current/)
